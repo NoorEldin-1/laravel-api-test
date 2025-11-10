@@ -18,23 +18,16 @@ class User extends Authenticatable
         'password',
         'points',
     ];
-
     public function orders()
     {
         return $this->hasMany(Order::class);
     }
-
-
     protected $hidden = [
         'password',
-        'remember_token',
     ];
-
-
     protected function casts(): array
     {
         return [
-            'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
     }

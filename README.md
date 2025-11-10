@@ -1,14 +1,14 @@
 # Laravel API Test
 
-## 🧪 اختبار الـ API
+## 🧪 How to Test the API
 
-**الـ Endpoint:**
+**Endpoint:**
 
 ```
 POST http://127.0.0.1:8000/api/orders/{order_id}/pay
 ```
 
-### ✅ في حالة النجاح:
+### ✅ Success Response:
 
 ```json
 {
@@ -33,9 +33,9 @@ POST http://127.0.0.1:8000/api/orders/{order_id}/pay
 }
 ```
 
-### ⚠️ في حالة الخطأ:
+### ⚠️ Error Responses:
 
-#### 1. إذا كان الـ order غير موجود:
+#### 1. When the order ID does not exist:
 
 ```json
 {
@@ -46,7 +46,7 @@ POST http://127.0.0.1:8000/api/orders/{order_id}/pay
 }
 ```
 
-#### 2. إذا لم تكن حالة الطلب `pending`:
+#### 2. When the order status is not `pending`:
 
 ```json
 {
