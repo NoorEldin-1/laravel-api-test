@@ -14,12 +14,22 @@ POST http://127.0.0.1:8000/api/orders/{order_id}/pay
 {
     "message": "Order paid successfully.",
     "order": {
-        "id": 1,
-        "user_id": 1,
-        "total_price": "120.00",
-        "status": "paid"
+        "id": 6,
+        "user_id": 2,
+        "total_price": "64.00",
+        "status": "paid",
+        "created_at": "2025-11-10T13:01:33.000000Z",
+        "updated_at": "2025-11-10T13:16:47.000000Z",
+        "user": {
+            "id": 2,
+            "name": "Brandy Waters Jr.",
+            "email": "cmante@example.org",
+            "points": 467,
+            "created_at": "2025-11-10T13:01:33.000000Z",
+            "updated_at": "2025-11-10T13:16:47.000000Z"
+        }
     },
-    "user_points": 130
+    "user_points": 467
 }
 ```
 
